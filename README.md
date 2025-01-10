@@ -25,7 +25,6 @@ The assistant can process complex queries, maintain conversational context, and 
 - [Example Output](#example-output)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Enhancements You Can Contribute To](#enhancements-you-can-contribute-to)
-- [License](#license)
 
 ---
 
