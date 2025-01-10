@@ -25,10 +25,6 @@ The assistant can process complex queries, maintain conversational context, and 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/pdf-ai-assistant.git
-   cd pdf-ai-assistant
-   ```
 
 2. Add your GroqLLM API key:
    Replace `groq_api_key` with your own key in the `GroqLLM` class.
