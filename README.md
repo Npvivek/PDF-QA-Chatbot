@@ -13,18 +13,17 @@
 
 This project implements a **Conversational AI Assistant** designed to help employees understand company policies by referencing a company-provided PDF document. It uses **LangChain**, **FAISS**, and **HuggingFace embeddings** for PDF content retrieval and a custom GroqLLM for dynamic query answering. 
 
-The assistant can process complex queries, maintain conversational context, and provide precise responses based on the document.
+The assistant can process complex queries, maintain conversational context, and provide precise responses based on the given document.
 
 ---
 
 ## Table of Contents
 - [Features](#features)
-- [Setup](#setup)
+- [How to Use](#how-to-use)
 - [How It Works](#how-it-works)
-- [Usage](#usage)
 - [Example Output](#example-output)
-- [Contribution Guidelines](#contribution-guidelines)
-- [Enhancements You Can Contribute To](#enhancements-you-can-contribute-to)
+- [Future Enhancements](#future-enhancements)
+- [How to Contribute](#how-to-contribute)
 
 ---
 
@@ -38,12 +37,14 @@ The assistant can process complex queries, maintain conversational context, and 
 
 ---
 
-## Setup
+## How to Use
 
-1. Open the `lcpdf.ipynb` notebook in [Google Colab](https://colab.research.google.com/).
-2. Run the cells sequentially to set up the environment and execute the assistant.
+1. Open the project notebook in **Google Colab**: [Run on Google Colab](https://colab.research.google.com/).
+2. Upload your PDF file in the notebook when prompted.
+3. Follow the notebook instructions to run each cell sequentially.
+4. Ask questions about the uploaded PDF and get precise, context-aware answers.
 
-No additional setup or installations are needed beyond running the notebook.
+No installation or setup is required besides having a Google account to access Colab.
 
 ---
 
@@ -54,33 +55,6 @@ No additional setup or installations are needed beyond running the notebook.
 3. **Query Retrieval**: Retrieves the most relevant chunks using FAISS.
 4. **Custom LLM**: Constructs query-specific prompts for GroqLLM to generate precise responses.
 5. **Memory Management**: Maintains a buffer of conversational history for dynamic interactions.
-
----
-
-## Usage
-
-### Step 1: Load a PDF
-Replace the `pdf_path` with your own PDF file:
-```python
-pdf_path = "your_document.pdf"
-loader = PyPDFLoader(pdf_path)
-pages = loader.load()
-```
-
-### Step 2: Run a Query
-Ask a question by calling:
-```python
-ask_question("What is the notice period required when an employee resigns?")
-```
-
-### Step 3: Customize Queries
-Add more queries to the `test_queries` list for batch testing:
-```python
-test_queries = [
-    "What is the policy for remote employees?",
-    "Can I take vacation leave during my notice period?",
-]
-```
 
 ---
 
@@ -95,26 +69,27 @@ A: Yes, under certain circumstances, the notice period may be waived by mutual a
 
 ---
 
-## Contribution Guidelines
+## Future Enhancements
 
-We welcome contributions! Here’s how you can help:
-
-1. Fork this repository.
-2. Create a new branch (`git checkout -b feature-new-feature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-new-feature`).
-5. Open a pull request.
+- **Multi-PDF Support**: Enable the assistant to work with multiple PDFs simultaneously.
+- **Multilingual Support**: Add capabilities to handle documents in various languages.
+- **Advanced Models**: Explore integration with LayoutLMv3 for processing complex document layouts.
+- **OCR Integration**: Improve text extraction for scanned documents.
+- **Customizable Output**: Allow users to configure response formats and styles.
 
 ---
 
-## Enhancements You Can Contribute To
+## How to Contribute
 
-- [ ] Add multi-PDF support.
-- [ ] Integrate additional LLM providers.
-- [ ] Expand error-handling mechanisms.
-- [ ] Include support for multilingual documents.
+We welcome contributions! Here’s how you can get involved:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-new-feature`).
+3. Submit a pull request with a detailed description of changes.
+
+For major changes, please open an issue first to discuss your ideas.
 
 ---
 
 
-Feel free to clone, customize, and deploy this project! For any queries, reach out via Issues or Discussions.
+Feel free to explore, customize, and deploy this project! For any queries, reach out via Issues or Discussions.
