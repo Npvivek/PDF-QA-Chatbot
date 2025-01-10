@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![LangChain](https://img.shields.io/badge/LangChain-Integration-brightgreen)](https://github.com/langchain-ai/langchain)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
+
 
 ## Overview
 
@@ -104,11 +104,7 @@ We welcome contributions! Here’s how you can help:
 
 ---
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 
 
