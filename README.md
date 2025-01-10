@@ -1,14 +1,31 @@
 # PDF-Based Conversational AI Assistant
 
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/release/python-390/)
-[![LangChain](https://img.shields.io/badge/LangChain-Integration-brightgreen)](https://github.com/langchain-ai/langchain)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-Integration-brightgreen?logo=langchain)
+![FAISS](https://img.shields.io/badge/FAISS-Vector_Store-orange)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-Embeddings-yellow?logo=huggingface)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?logo=github)
 
+---
 
 ## Overview
 
 This project implements a **Conversational AI Assistant** designed to help employees understand company policies by referencing a company-provided PDF document. It uses **LangChain**, **FAISS**, and **HuggingFace embeddings** for PDF content retrieval and a custom GroqLLM for dynamic query answering. 
 
 The assistant can process complex queries, maintain conversational context, and provide precise responses based on the document.
+
+---
+
+## Table of Contents
+- [Features](#features)
+- [Setup](#setup)
+- [How It Works](#how-it-works)
+- [Usage](#usage)
+- [Example Output](#example-output)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Enhancements You Can Contribute To](#enhancements-you-can-contribute-to)
+- [License](#license)
 
 ---
 
@@ -22,12 +39,12 @@ The assistant can process complex queries, maintain conversational context, and 
 
 ---
 
-## Installation
+## Setup
 
-1. Clone the repository:
+1. Open the `lcpdf.ipynb` notebook in [Google Colab](https://colab.research.google.com/).
+2. Run the cells sequentially to set up the environment and execute the assistant.
 
-2. Add your GroqLLM API key:
-   Replace `groq_api_key` with your own key in the `GroqLLM` class.
+No additional setup or installations are needed beyond running the notebook.
 
 ---
 
@@ -91,7 +108,7 @@ We welcome contributions! Here’s how you can help:
 
 ---
 
-## Some features you can contribute to.
+## Enhancements You Can Contribute To
 
 - [ ] Add multi-PDF support.
 - [ ] Integrate additional LLM providers.
@@ -99,9 +116,6 @@ We welcome contributions! Here’s how you can help:
 - [ ] Include support for multilingual documents.
 
 ---
-
-
-
 
 
 Feel free to clone, customize, and deploy this project! For any queries, reach out via Issues or Discussions.
